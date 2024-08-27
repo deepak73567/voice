@@ -4,18 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-   .style1{
-    color: blue;
-    text-shadow: 0cqmax;
-   }
-   #text{
-    padding: 10px;
-   }
-   .st2{
-    padding: 10px;
-   }
-    </style>
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
@@ -23,12 +12,6 @@
         <input type="text" id="text" placeholder="Enter text to speak">
         <button class="st2" onclick="speak()">Press for listen</button>
     </div>
-    <script>
-        function speak() {
-            var text = document.getElementById("text").value;
-            var utterance = new SpeechSynthesisUtterance(text);
-            window.speechSynthesis.speak(utterance);
-        }
-    </script>
+   <script src="app.js"></script>
 </body>
 </html>
